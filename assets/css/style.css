@@ -1,0 +1,31 @@
+* {
+    color: #777777;
+}
+
+.navbar {
+    color: #ffffff;
+    background-color: #4aaaa5;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+.nav-link:hover, .navheader:hover {
+    color: #dddddd;
+}
+
+.navheader {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+h2 {
+    color: #4aaaa5;
+}
+
+img {
+    max-width: 180px;
+    max-height: 180px;
+    margin: 0 20px 15px 0;
+}
