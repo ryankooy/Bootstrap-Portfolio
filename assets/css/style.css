@@ -1,31 +1,81 @@
 * {
-    color: #777777;
+    color: ghostwhite;
+}
+
+.body {
+    background-color: black;
+    z-index: 1;
 }
 
 .navbar {
-    color: #ffffff;
-    background-color: #4aaaa5;
+    background-color: rgb(43, 43, 61);
+    height: 80px;
+    top: 0;
+    left: 0;
+    position: fixed;
 }
 
 .nav-link {
     color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.nav-link:hover, .navheader:hover {
+.nav-link:hover {
     color: #dddddd;
 }
 
-.navheader {
-    color: #ffffff;
-    font-size: 30px;
+.navbar-brand {
+    color: ghostwhite;
+    font-family: 'Barriecito';
+    padding: 10px;
 }
 
-h2 {
-    color: #4aaaa5;
+.head, .head2 {
+    font-size: 40px;
+    color: firebrick;
+    font-family: 'Stylish', sans-serif;
 }
 
-img {
-    max-width: 180px;
-    max-height: 180px;
+.head2 {
+    margin-left: 20px;
+}
+
+#portrait {
+    max-width: 250px;
+    max-height: 250px;
+    width: 100%;
+    height: auto;
     margin: 0 20px 15px 0;
+}
+
+.carousel-fade, .d-block {
+    margin: auto;
+    max-height: 600px;
+    max-width: 600px;
+    margin-bottom: 20%;
+}
+
+footer {
+    padding: 7px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(43, 43, 61);
+    border-top-width: 10px;
+    border-color: blanchedalmond;
+    width: 100%;
+    height: 40px;
+    z-index: 3;
+}
+
+.foottext {
+    color: ghostwhite;
+}
+
+@media screen and (max-width: 640px) {
+
+    .nav-link {
+        float:left;
+    }
+
 }
