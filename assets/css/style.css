@@ -10,9 +10,9 @@ body {
 .container {
     margin-top: 20px;
     margin-bottom: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.70);
     border-radius: 3%;
-    padding-bottom: 10px;
+    padding: 15px 30px 15px 0;
 }
 
 .navbar {
@@ -48,29 +48,36 @@ body {
     to {color: goldenrod;}
 }
 
-.head, .head2 {
+.head {
+    position: relative;
     font-size: 40px;
     color: ghostwhite;
     font-family: 'Stylish', sans-serif;
+    animation-name: head;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
 }
 
-.head2 {
-    margin-left: 20px;
+@keyframes head {
+    0% {opacity: 0; left: 300px; top: 0;}
+    50% {opacity: 0.7; left: 0px; top: 0;}
+    65% {opacity: 1; left: 5px; top: 0;}
+    85% {opacity: 0.5; left: 0px; top: 0;}
+    100% {opactiy: 1; left: 0px; top: 0;}
 }
 
 .text {
     font-family: 'Stylish';
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 20px;
+    line-height: 24px;
+    margin: auto 30px auto 0;
 }
 
-
 #portrait {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 300px;
+    max-height: 300px;
     width: 100%;
-    height: auto;
-    margin: 0 20px 15px 0;
+    margin: 5px 0 15px 0;
     border: 3px double goldenrod;
 }
 
@@ -82,12 +89,18 @@ body {
     border: 3px double goldenrod;
 }
 
+#butt {
+    color: goldenrod;
+    background-color: black;
+    border: 3px double goldenrod;
+}
+
 footer {
     padding: 6px;
     text-align: center;
     position: fixed;
     bottom: 0;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.85);
     border-top: 3px double goldenrod;
     width: 100%;
     height: 40px;
@@ -101,12 +114,18 @@ footer {
 
 @media screen and (max-width: 640px) {
 
+    .container {
+        height: auto;
+    }
+
     #portrait {
         max-width: 300px;
         width: 100%;
+        height: auto;
+        clear: right;
     }
 
-    .col-7 {
+    .col-7, .text {
         float: left;
     }
 
