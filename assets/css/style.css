@@ -2,17 +2,24 @@
     color: ghostwhite;
 }
 
-.body {
-    background-color: black;
+body {
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/burried.png");
     z-index: 1;
 }
 
+.container {
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
 .navbar {
-    background-color: rgb(43, 43, 61);
+    background-color: rgb(82, 82, 100);
+    border-bottom: 4px solid rgb(226, 121, 0, 0.3);
     height: 80px;
     top: 0;
     left: 0;
     position: fixed;
+    z-index: 3;
 }
 
 .nav-link {
@@ -32,7 +39,7 @@
 
 .head, .head2 {
     font-size: 40px;
-    color: firebrick;
+    color: rgb(226, 121, 0);
     font-family: 'Stylish', sans-serif;
 }
 
@@ -56,13 +63,12 @@
 }
 
 footer {
-    padding: 7px;
+    padding: 4px;
     text-align: center;
     position: fixed;
     bottom: 0;
-    background-color: rgb(43, 43, 61);
-    border-top-width: 10px;
-    border-color: blanchedalmond;
+    background-color: rgb(82, 82, 100, 0.7);
+    border-top: 4px solid rgb(226, 121, 0, 0.3);
     width: 100%;
     height: 40px;
     z-index: 3;
@@ -74,8 +80,15 @@ footer {
 
 @media screen and (max-width: 640px) {
 
-    .nav-link {
-        float:left;
+    .linkies {
+        margin-top: 4px;
+        float: left;
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+        margin: 0 auto auto 0;
     }
 
 }
